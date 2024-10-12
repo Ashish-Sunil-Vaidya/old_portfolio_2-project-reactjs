@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rubik+Pixels&family=Tilt+Prism&display=swap");
+
+.navbar {
+  display: flex;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  font: 1.2em "Fira Sans", sans-serif;
+  padding: 10px;
+  z-index: 4;
+  top: -200px;
+  transition: height 0.5s, top 0.5s;
+  padding-left: 5%;
+}
+
+.navbar-items {
+  display: flex;
+}
+
+.tablink {
+  width: fit-content;
+  margin-inline: 20px;
+}
+
+.nav-text {
+  user-select: none;
+}
+
+.tablink {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.isActive {
+  color: rgb(45, 110, 250);
+}
+.tablink:hover > .nav-border {
+  transform: scaleX(1);
+  transition: 0.2s;
+}
+
+.isActive > .nav-border {
+  transform: scaleX(1);
+  transition: 0.4s;
+}
+
+.nav-border {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(0, 79, 250);
+  transform: scaleX(0);
+  transition: 0.4s;
+  border-radius: 99px;
+}
+
+.menu-button {
+  display: none;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: darkgrey;
+}
+
+.logo {
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: 900;
+  color: white;
+  border-radius:50%;
+  background: linear-gradient(90deg, rgba(9,9,121,1), rgba(0,212,255,1));
+  padding: .4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: block;
+    width: 100%;
+    left: 0;
+    transform: translateX(0);
+    border-radius: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+    box-shadow: none;
+  }
+
+  .tablink {
+    margin: 0;
+  }
+
+  .menu-button {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+  }
+
+  .logo {
+    display: grid;
+    width: fit-content;
+  }
+
+  .navbar-items {
+    font-size: 16px;
+    display: grid;
+    justify-content: left;
+    margin-top: 50px;
+    gap: 20px;
+  }
+}

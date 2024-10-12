@@ -1,0 +1,48 @@
+// import { GeoAltFill,TelephoneFill,EnvelopeAtFill,Globe ,CompassFill,Send,Github} from 'react-bootstrap-icons'
+
+export default[
+    {
+        id:0,
+        title:"Address",
+        text:"India, Maharashtra, Solapur -413001",
+        // icon:<GeoAltFill className='icon-css'/>,
+        // link_icon:<CompassFill/>,
+        question:"Meet me in Person?",
+        button_css:{backgroundColor:"orange",display:"flex",alignItems:"center",gap:"0 10px"},
+        button_text:"Directions",
+        action:"",
+    },
+    {
+        id:1,
+        title:"Phone Number",
+        text:"+91 9527343353",
+        // icon:<TelephoneFill className='icon-css'/>,
+        // link_icon:<TelephoneFill/>,
+        question:"Want to call?",
+        button_css:{backgroundColor:"green",display:"flex",alignItems:"center",gap:"0 10px"},
+        button_text:"Call Me",
+        action:"",
+    },
+    {
+        id:2,
+        title:"Mail me",
+        text:"ashuvaidya2003@gmail.com",
+        // icon:<EnvelopeAtFill className='icon-css'/>,
+        // link_icon:<Send/>,
+        question:"Send a message?",
+        button_css:{backgroundColor:"red",display:"flex",alignItems:"center",gap:"0 10px"},
+        button_text:"Mail Me",
+        action:"",
+    },
+    {
+        id:3,
+        title:"Github",
+        text:"Ashish-Vaidya (Calm Boi)",
+        // icon:<Github className='icon-css'/>,
+        // link_icon:<Github/>,
+        question:"View and contribute to my projects",
+        button_css:{backgroundColor:"#333",display:"flex",alignItems:"center",gap:"0 10px"},
+        button_text:"Follow Me",
+        action:"",
+    },
+]
